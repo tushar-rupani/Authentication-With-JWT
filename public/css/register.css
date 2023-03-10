@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Open+Sans:wght@500;700&family=Poppins:wght@600&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+html{
+    background-image: url('../assets/auth-bg.png');
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+span{
+    font-family: 'Poppins';
+    padding-top: 7px;
+    font-size: 16px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.main-wrapper{
+    height: 100%;
+    width: 34%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px 90px;
+}
+.label{
+    padding: 10px 0;
+    font-family: "Open Sans";
+}
+.input{
+    margin-top: 20px;
+}
+.card{
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+}
+.card li{
+    margin: 10px 0;
+}
+input[type="text"], 
+input[type="email"],
+input[type="password"]{
+    padding: 12px;
+    width: 93%;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border: none;
+    background-color: #efefef;
+}
+
+input[type="submit"]{
+    background-color:  #174F2A;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 30px;
+    width: 100%;
+}
+h2{
+    font-family: "Hanken Grotesk";
+    margin-top: 3.4rem; 
+}
+.input-wrappers{
+    margin-bottom: 3rem;
+    height: 63vh;
+}
+.flex-img{
+    margin-top: -6.5rem;
+    position: fixed;
+    left: 75%;
+}
+.mtop-30{
+    margin-top: 30px;
+}
+p, a{
+    font-family: 'Montserrat';
+}
+a{
+    color: #A4843F;
+}

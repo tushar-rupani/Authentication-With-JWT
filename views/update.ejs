@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | JWT Tokens</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="parent-container">
+        <div class="container">
+            <div class="main-wrapper" style="height: 93vh;">
+                <img src="assets/logo.svg" alt="">
+                <h2>Let's Update your data!</h2>
+                <div class="input-wrappers">
+
+                 <form action="/update" method="POST">
+                <div class="input">
+                    <div class="label">
+                        <label for="">Email</label>
+                    </div>
+                    <input type="email" name="email" id="" value="<%= res.email %>" onfocus="removeSpan()" readonly>
+                   
+                </div>
+                <input type="hidden" name="id" value="<%= res.id%>">
+                <div class="input">
+                    <div class="label">
+                        <label for="">Username</label>
+                    </div>
+                    <input type="text" name="name" value="<%= res.name %>" id="">
+                </div> 
+
+                <div class="input">
+                    <div class="label">
+                        <label for="">Old Password</label>
+                    </div>
+                    <input type="text" name="oldpass" id="">
+                </div> 
+
+                <div class="input">
+                    <div class="label">
+                        <label for="">New Password</label>
+                    </div>
+                    <input type="text" name="newpass" id="">
+                </div> 
+
+              
+
+                <div class="submit">
+                    <input type="submit" value="Update">
+                </div>
+
+                
+                <% if(success) { %>
+                    <br>
+                    <span class="mtop-30" id="error">  <%= success %></span>
+                <% } %>
+                </form>
+
+                </div>
+            <p>Take me back to | <a href="/home">Home</a></p>
+
+            </div>
+            <div class="flex-img">
+                <img src="assets/bottom-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+   
+</body>
+<script src="/js/validate.js"></script>
+
+</html>
